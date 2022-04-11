@@ -6,7 +6,6 @@ import Navbar from './pages/Navbar';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { BarLoader } from 'react-spinners';
-import { css } from '@emotion/react';
 
 
 
