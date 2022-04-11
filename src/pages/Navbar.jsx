@@ -22,7 +22,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="dark-light-mode cursor-pointer d-flex font-sm align-items-center me-3" onClick={() => dispatch(modeToggle())}>
-                    <i className='bx bx-sun'></i>
+                    <i className={` ${modeState ? 'bx bx-sun' : 'bx bx-moon'}`}></i>
                 </div>
 
                 <div className="search cursor-pointer d-flex font-sm align-items-center me-3">
