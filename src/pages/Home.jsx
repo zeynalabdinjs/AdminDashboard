@@ -29,7 +29,7 @@ const Home = () => {
             <div className="statistic-icons d-flex flex-row justify-content-between mt-3 pt-3">
 
               <div className="statistic-elements d-flex flex-row align-items-center">
-                <i class='bx bx-stats font-md me-2'></i>
+                <i className='bx bx-stats font-md me-2'></i>
                 <span className='d-flex justify-content-center flex-column'>
                   <h4 className='font-xss mb-0'>230k</h4>
                   <span className='opacity-75 font-xsssss'>Sales</span>
@@ -38,7 +38,7 @@ const Home = () => {
 
 
               <div className="statistic-elements d-flex flex-row align-items-center">
-                <i class='bx bx-user font-md me-2'></i>
+                <i className='bx bx-user font-md me-2'></i>
                 <span className='d-flex justify-content-center flex-column'>
                   <h4 className='font-xss mb-0'>8.549k</h4>
                   <span className='opacity-75 font-xsssss'>Customers</span>
@@ -46,7 +46,7 @@ const Home = () => {
               </div>
 
               <div className="statistic-elements d-flex flex-row align-items-center">
-                <i class='bx bx-package font-md me-2'></i>
+                <i className='bx bx-package font-md me-2'></i>
                 <span className='d-flex justify-content-center flex-column'>
                   <h4 className='font-xss mb-0'>1.423k</h4>
                   <span className='opacity-75 font-xsssss'>Products</span>
@@ -54,7 +54,7 @@ const Home = () => {
               </div>
 
               <div className="statistic-elements d-flex flex-row align-items-center">
-                <i class='bx bx-dollar font-md me-2'></i>
+                <i className='bx bx-dollar font-md me-2'></i>
                 <span className='d-flex justify-content-center flex-column'>
                   <h4 className='font-xss mb-0'>$9745</h4>
                   <span className='opacity-75 font-xsssss'>Revenue</span>

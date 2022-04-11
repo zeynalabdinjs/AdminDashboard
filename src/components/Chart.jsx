@@ -1,6 +1,5 @@
 
 import React from 'react';
-import datas from '../data/data.json'
 import {
     Chart as ChartJS,
     CategoryScale,
