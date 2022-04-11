@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/style.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Dashboard from './pages/Dashboard';
+import Home from './pages/Home';
+import Navbar from './pages/Navbar';
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+
+
+
 
 function App() {
+  const modeState = useSelector(state => state.mode.value)
+
+  const active = modeState ? 'active' : '';
+  useEffect(() => {
+    if (modeState) {
+      document.body.classList.add('active');
+    }
+
+    else {
+      document.body.classList.remove('active');
+    }
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${active}`}>
+      <Dashboard />
+      <Navbar />
+
+
+      {/* roots */}
+      <div className="main-container">
+
+
+        <Home />
+
+      </div>
+      {/* roots */}
     </div>
   );
 }

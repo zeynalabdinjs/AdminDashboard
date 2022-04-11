@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #151d30;
+    --box-color: #292f45;
+    --text-color: #eee;
+    --purple-color: #9814eb;
+    --text-light-color: #5e5873;
+    --bg-light-color: #f8f8f8;
+    --box-light-color: #fff;
+}
+
+
+
+/* dark mode */
+body {
+    background: #151d30 !important;
+    padding-left: 80px;
+    transition: 0.4s ease;
+}
+
+body.active {
+    background: #e3e3e3 !important;
+}
+
+.App .box-color {
+    background-color: #292f45 !important;
+}
+
+.App .bg-color {
+    background-color: #151d30 !important;
+}
+
+.App .bg-purple {
+    background-color: #9814eb !important;
+}
+
+.App * {
+    color: #eee !important;
+}
+
+.App .text-purple {
+    color: #9814eb !important;
+}
+
+/* light mode */
+.App.active .box-color {
+    background-color: rgb(239, 239, 239) !important;
+}
+
+.App.active .bg-color {
+    background-color: #f8f8f8 !important;
+}
+
+.App.active * {
+    color: #2a2734 !important;
+}
+
+/* font size classes */
+
+.font-xssssss {
+    font-size: 8px !important;
+}
+
+.font-xsssss {
+    font-size: 11px !important;
+}
+
+.font-xssss {
+    font-size: 13px !important;
+}
+
+.font-xsss {
+    font-size: 14px !important;
+}
+
+.font-xss {
+    font-size: 16px !important;
+}
+
+.font-xs {
+    font-size: 18px !important;
+}
+
+.font-sm {
+    font-size: 20px !important;
+}
+
+.font-md {
+    font-size: 22px !important;
+}
+
+.font-lg {
+    font-size: 25px !important;
+}
+
+.font-xl {
+    font-size: 28px !important;
+}
+
+.font-xxl {
+    font-size: 32px !important;
+}
+
+/* font size classes */
+
+/* font-weight */
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+/* font-weight */
+
+
+/* custom class */
+.posr {
+    position: relative;
+}
+
+.ovh {
+    overflow: hidden;
+}
+
+
+.br-4 {
+    border-radius: 4px;
+}
+
+.h-180 {
+    height: 180px;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* custom class */
+
+
+.dashboard {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    transition: 0.3s ease;
+}
+
+.box {
+    transition: 0.3s ease;
+}
+
+.dashboard .bx {
+    font-size: 22px;
+    margin-bottom: 7px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+.dashboard .col .bx:hover {
+    cursor: pointer;
+    background-color: var(--bg-color);
+}
+
+.App.active .dashboard .col .bx:hover {
+    cursor: pointer;
+    color: #eee !important;
+}
+
+.navbar {
+    height: 60px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.navbar .picture {
+    position: relative;
+}
+
+.navbar .picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.picture span::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+}
+
+.App .custom-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    right: -7px;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    color: #eee !important;
+}
+
+.bg-linear-purple {
+    background: linear-gradient(135deg, #c848ff, #9814eb);
+}
+
+.bg-linear-danger {
+    background: linear-gradient(135deg, #dd2889, #9d0054);
+}
+
+.App.active button {
+    color: white !important;
+}
+
+.statistic-elements i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.statistic-elements:nth-child(1) i {
+    background: rgba(185, 22, 255, 0.1);
+    color: #b916ff;
+}
+
+.statistic-elements:nth-child(2) i {
+    background: rgba(22, 197, 255, 0.1);
+    color: #16c5ff;
+}
+
+.statistic-elements:nth-child(3) i {
+    background: rgba(255, 22, 123, 0.1);
+    color: #ff167b;
+}
+
+.statistic-elements:nth-child(4) i {
+    background: rgba(22, 255, 65, 0.1);
+    color: #16ff41;
+}
+
+.App.active .statistic-elements:nth-child(1) i {
+    background: rgba(185, 22, 255, 0.3);
+}
+
+.App.active .statistic-elements:nth-child(2) i {
+    background: rgba(22, 197, 255, 0.3);
+}
+
+.App.active .statistic-elements:nth-child(3) i {
+    background: rgba(255, 22, 123, 0.3);
+}
+
+.App.active .statistic-elements:nth-child(4) i {
+    background: rgba(22, 255, 65, 0.3);
+}
