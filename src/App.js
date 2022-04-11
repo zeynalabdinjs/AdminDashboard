@@ -11,12 +11,12 @@ import { BarLoader } from 'react-spinners';
 
 function App() {
   const [loading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   setLoading(true)
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 2000)
-  // }, [])
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
 
 
 
@@ -33,11 +33,6 @@ function App() {
       document.body.classList.remove('active');
     }
   });
-  useEffect(() => {
-    window.onload = () => {
-      setLoading(false)
-    }
-  })
 
 
 
