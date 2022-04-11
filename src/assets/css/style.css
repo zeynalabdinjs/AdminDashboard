@@ -22,44 +22,46 @@
 /* dark mode */
 body {
     background: #151d30 !important;
+    transition: color 0.4s ease;
+}
+.myApp{
     padding-left: 80px;
-    transition: 0.4s ease;
 }
 
 body.active {
     background: #e3e3e3 !important;
 }
 
-.App .box-color {
+.myApp .box-color {
     background-color: #292f45 !important;
 }
 
-.App .bg-color {
+.myApp .bg-color {
     background-color: #151d30 !important;
 }
 
-.App .bg-purple {
+.myApp .bg-purple {
     background-color: #9814eb !important;
 }
 
-.App * {
+.myApp * {
     color: #eee !important;
 }
 
-.App .text-purple {
+.myApp .text-purple {
     color: #9814eb !important;
 }
 
 /* light mode */
-.App.active .box-color {
+.myApp.active .box-color {
     background-color: rgb(239, 239, 239) !important;
 }
 
-.App.active .bg-color {
+.myApp.active .bg-color {
     background-color: #f8f8f8 !important;
 }
 
-.App.active * {
+.myApp.active * {
     color: #2a2734 !important;
 }
 
@@ -183,7 +185,7 @@ body.active {
     background-color: var(--bg-color);
 }
 
-.App.active .dashboard .col .bx:hover {
+.myApp.active .dashboard .col .bx:hover {
     cursor: pointer;
     color: #eee !important;
 }
@@ -216,7 +218,7 @@ body.active {
     bottom: 3px;
 }
 
-.App .custom-badge {
+.myApp .custom-badge {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,7 +242,7 @@ body.active {
     background: linear-gradient(135deg, #dd2889, #9d0054);
 }
 
-.App.active button {
+.myApp.active button {
     color: white !important;
 }
 
@@ -273,18 +275,18 @@ body.active {
     color: #16ff41;
 }
 
-.App.active .statistic-elements:nth-child(1) i {
+.myApp.active .statistic-elements:nth-child(1) i {
     background: rgba(185, 22, 255, 0.3);
 }
 
-.App.active .statistic-elements:nth-child(2) i {
+.myApp.active .statistic-elements:nth-child(2) i {
     background: rgba(22, 197, 255, 0.3);
 }
 
-.App.active .statistic-elements:nth-child(3) i {
+.myApp.active .statistic-elements:nth-child(3) i {
     background: rgba(255, 22, 123, 0.3);
 }
 
-.App.active .statistic-elements:nth-child(4) i {
+.myApp.active .statistic-elements:nth-child(4) i {
     background: rgba(22, 255, 65, 0.3);
 }
