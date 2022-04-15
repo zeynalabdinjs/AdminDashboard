@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <nav className='navbar box-color shadow-custom px-3 my-3 me-3 d-flex align-content-center'>
             <div className="navbar-wrapper d-flex justify-content-end w-100">
-                <div className="language cursor-pointer me-3 d-flex align-items-center">
+                <div className="language d-none d-sm-flex cursor-pointer me-3 d-flex align-items-center">
                     <img src={en} width={25} alt="" />
                     <span className='ms-1 font-xssss fw-400'>English</span>
                 </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
                     <i className='bx bx-search'></i>
                 </div>
 
-                <div className="cart cursor-pointer posr d-flex font-sm align-items-center me-3">
+                <div className="cart d-none d-sm-flex cursor-pointer posr d-flex font-sm align-items-center me-3">
                     <i className='bx bx-cart'></i>
                     <span className='custom-badge bg-linear-purple fw-600'>6</span>
                 </div>

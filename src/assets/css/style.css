@@ -150,6 +150,9 @@ body.active {
 .h-180 {
     height: 180px;
 }
+.min-h-180 {
+    min-height: 180px;
+}
 
 
 .cursor-pointer {
@@ -194,6 +197,7 @@ body.active {
     height: 60px;
     border-radius: 4px;
     transition: 0.3s ease;
+    padding-left: 12px;
 }
 
 .navbar .picture {
@@ -245,14 +249,15 @@ body.active {
 .myApp.active button {
     color: white !important;
 }
-
+.statistic-elements{
+    width: 120px;
+}
 .statistic-elements i {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    padding: 14px;
 }
 
 .statistic-elements:nth-child(1) i {

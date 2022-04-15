@@ -4,10 +4,10 @@ import ChartLine from '../components/ChartLine'
 
 const Home = () => {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid ps-0 pe-3 pb-5'>
       <div className="row">
-        <div className="col-md-4 px-0 mb-2 mb-md-0">
-          <div className="box box-color br-4 h-180 px-4 py-3">
+        <div className="col-md-4 mb-3 ">
+          <div className="box box-color br-4 min-h-180 px-4 py-3">
             <div className="messages-header">
               <h2 className='font-xss'>Congratulations<span className='font-sm'>&#127881;</span> Zeynalabdin!</h2>
             </div>
@@ -19,14 +19,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-md-8 pe-3 mb-2 mb-md-0">
-          <div className="box box-color br-4 h-180 px-4 py-3">
+        <div className="col-md-8 mb-3 ">
+          <div className="box box-color br-4 min-h-180 px-4 py-3">
             <div className="messages-header d-flex justify-content-between">
               <h2 className='font-xss'>Statistics</h2>
               <p className='font-xsssss opacity-75 fw-300'>Updated 1 month ago</p>
             </div>
 
-            <div className="statistic-icons d-flex flex-row justify-content-between mt-3 pt-3">
+            <div className="statistic-icons d-flex flex-wrap gap-4 flex-row justify-content-between mt-3 pb-3 pt-3">
 
               <div className="statistic-elements d-flex flex-row align-items-center">
                 <i className='bx bx-stats font-md me-2'></i>
@@ -68,18 +68,18 @@ const Home = () => {
 
 
 
-      <div className="row mt-3">
+      <div className="row">
         <div className="col-md-4">
           <div className="row">
-            <div className="col-6 ps-0">
-              <div className=" h-180 box-color br-4 py-3 px-3">
+            <div className="col-6">
+              <div className=" min-h-180 box-color br-4 py-3 px-3">
                 <h4 className='font-xssss opacity-75'>Orders</h4>
                 <h3 className='font-md'>2.76k</h3>
                 <Chart />
               </div>
             </div>
-            <div className="col-6 pe-0">
-              <div className=" h-180 box-color br-4 py-3 px-3">
+            <div className="col-6">
+              <div className="min-h-180 box-color br-4 py-3 px-3">
                 <h4 className='font-xssss opacity-75'>Profit</h4>
                 <h3 className='font-md'>6.24k</h3>
                 <ChartLine />
@@ -91,7 +91,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-md-8  ps-4">
+        <div className="col-md-8">
 
         </div>
       </div>
