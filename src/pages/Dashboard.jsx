@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/img/logo.png'
 
 
@@ -13,7 +14,9 @@ const Dashboard = () => {
 
             <div className="row">
                 <div className="col">
-                    <i className='bx bx-home-alt'></i>
+                    <Link to="/">
+                        <i className='bx bx-home-alt'></i>
+                    </Link>
                 </div>
             </div>
 

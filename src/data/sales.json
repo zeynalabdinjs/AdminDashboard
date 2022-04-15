@@ -1,0 +1,57 @@
+[
+    {   "id": 1,
+        "product": "Samsung S21 Fe",
+        "price": 799,
+        "amount": 38
+    },
+    {
+        "id": 2,
+        "product": "Apple İphone 13",
+        "price": 1100,
+        "amount": 87
+    },
+    {
+        "id": 3,
+        "product": "Apple İphone 11",
+        "price": 700,
+        "amount": 12
+    },
+    {
+        "id": 4,
+        "product": "Xiaomi Redmi Note 11",
+        "price": 500,
+        "amount": 129
+    },
+    {
+        "id": 5,
+        "product": "Oppo Reno 6",
+        "price": 700,
+        "amount": 15
+    },
+    {
+        "id": 6,
+        "product": "Xiaomi Redmi Note 10",
+        "price": 429,
+        "amount": 85
+    },
+    {
+        "id": 7,
+        "product": "HP Pavilion 14",
+        "price": 999,
+        "amount": 12
+    },
+    {
+        "id": 8,
+        "product": "HP Pavilion 15 Gaming Green",
+        "price": 1300,
+        "amount": 7
+    },
+    {
+        "id": 9,
+        "product": "Apple Macbook M1",
+        "price": 1400,
+        "amount": 87
+    }
+    
+
+]

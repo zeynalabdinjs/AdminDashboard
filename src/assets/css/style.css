@@ -24,7 +24,11 @@ body {
     background: #151d30 !important;
     transition: color 0.4s ease;
 }
-.myApp{
+a{
+    text-decoration: none !important;
+}
+
+.myApp {
     padding-left: 80px;
 }
 
@@ -45,7 +49,7 @@ body.active {
 }
 
 .myApp * {
-    color: #eee !important;
+    color: #eee;
 }
 
 .myApp .text-purple {
@@ -62,7 +66,7 @@ body.active {
 }
 
 .myApp.active * {
-    color: #2a2734 !important;
+    color: #2a2734;
 }
 
 /* font size classes */
@@ -138,6 +142,10 @@ body.active {
     position: relative;
 }
 
+.posa {
+    position: absolute;
+}
+
 .ovh {
     overflow: hidden;
 }
@@ -150,6 +158,7 @@ body.active {
 .h-180 {
     height: 180px;
 }
+
 .min-h-180 {
     min-height: 180px;
 }
@@ -249,9 +258,11 @@ body.active {
 .myApp.active button {
     color: white !important;
 }
-.statistic-elements{
+
+.statistic-elements {
     width: 120px;
 }
+
 .statistic-elements i {
     display: flex;
     justify-content: center;
@@ -294,4 +305,87 @@ body.active {
 
 .myApp.active .statistic-elements:nth-child(4) i {
     background: rgba(22, 255, 65, 0.3);
+}
+
+/* search  */
+
+.search-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.search-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    animation: searchAnimation 1.5s forwards ease-in-out;
+}
+
+@keyframes searchAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@media (max-width: 500px) {
+    .sales table {
+        font-size: 10px !important;
+    }
+
+}
+
+.searchLabel {
+    display: flex;
+    align-items: center;
+}
+
+.searchLabel input {
+    width: 500px;
+    border-radius: 30px;
+    padding: 15px 0;
+    padding-left: 55px;
+}
+
+@media (max-width: 768px) {
+    .searchLabel input {
+        width: 350px;
+    }
+}
+
+.search-box button {
+    width: 150px;
+    border-radius: 30px;
+    padding: 13px 0;
+}
+
+/* search  */
+
+.close-search {
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+    top: 20px;
+    left: 5%;
 }

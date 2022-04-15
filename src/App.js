@@ -6,6 +6,13 @@ import Navbar from './pages/Navbar';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { BarLoader } from 'react-spinners';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Sales from './pages/Sales';
+import SearchModal from './Modal/SearchModal';
 
 
 
@@ -15,7 +22,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
-    }, 2000)
+    }, 500)
   }, [])
 
 
@@ -38,31 +45,40 @@ function App() {
 
   return (
     <>
-      {loading ?
-        <div className='loading d-flex w-100 vh-100 justify-content-center align-items-center'>
-          <BarLoader
-            size={80}
-            color={"#9814eb"}
-            loading={loading}
-          />
-        </div>
-        :
-        <div className={`myApp ${active}`}>
+      <BrowserRouter>
 
-          <Dashboard />
-          <Navbar />
-
-
-          {/* roots */}
-          <div className="main-container">
-
-
-            <Home />
-
+        {loading ?
+          <div className='loading d-flex w-100 vh-100 justify-content-center align-items-center'>
+            <BarLoader
+              size={80}
+              color={"#9814eb"}
+              loading={loading}
+            />
           </div>
-          {/* roots */}
-        </div>
-      }
+          :
+          <div className={`myApp ${active}`}>
+
+            <Dashboard />
+            <Navbar />
+            <SearchModal />
+
+
+            {/* roots */}
+            <div className="main-container">
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/sales' element={<Sales />} />
+              </Routes>
+
+
+
+
+            </div>
+            {/* roots */}
+          </div>
+        }
+      </BrowserRouter>
+
     </>
   );
 }

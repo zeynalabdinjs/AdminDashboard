@@ -3,15 +3,15 @@ import { useDispatch, useSelector } from 'react-redux'
 import en from '../assets/img/en.png'
 import profile from "../assets/img/profile.jpg"
 import { modeToggle } from '../store/mode'
+import { modalToggle } from '../store/modal'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const dispatch = useDispatch();
-    const modeState = useSelector(state => state.mode.value)
+    const modeState = useSelector(state => state.mode.value);
 
 
     console.log(modeState)
-
-
 
     return (
         <nav className='navbar box-color shadow-custom px-3 my-3 me-3 d-flex align-content-center'>
@@ -25,9 +25,9 @@ const Navbar = () => {
                     <i className={` ${modeState ? 'bx bx-sun' : 'bx bx-moon'}`}></i>
                 </div>
 
-                <div className="search cursor-pointer d-flex font-sm align-items-center me-3">
+                <Link to="sales" className="search cursor-pointer d-flex font-sm align-items-center me-3" onClick={() => dispatch(modalToggle())}>
                     <i className='bx bx-search'></i>
-                </div>
+                </Link>
 
                 <div className="cart d-none d-sm-flex cursor-pointer posr d-flex font-sm align-items-center me-3">
                     <i className='bx bx-cart'></i>
