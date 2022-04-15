@@ -11,7 +11,7 @@ const SearchModal = () => {
     const activeModal = modalStatus ? "active" : '';
 
     return (
-        <div className={`${activeModal} d-flex justify-content-center align-items-center search-overlay w-100 vh-100`}>
+        <div className={`${activeModal} d-flex justify-content-center pt-3 pt-md-0 align-items-start align-items-md-center search-overlay w-100 vh-100`}>
             <span className='close-search' onClick={() => dispatch(modalToggle())}>
                 <i className='bx bx-x font-xxl text-purple'></i>
             </span>
