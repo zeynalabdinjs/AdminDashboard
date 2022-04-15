@@ -386,6 +386,5 @@ body.active {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     border-radius: 50%;
-    top: 20px;
-    left: 5%;
+    bottom: 20px;
 }
