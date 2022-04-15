@@ -1,24 +1,24 @@
 [
     {   "id": 1,
-        "product": "Samsung S21 Fe",
+        "product": "Samsung S21 FE",
         "price": 799,
         "amount": 38
     },
     {
         "id": 2,
-        "product": "Apple İphone 13",
+        "product": "Apple iphone 13",
         "price": 1100,
         "amount": 87
     },
     {
         "id": 3,
-        "product": "Apple İphone 11",
+        "product": "Apple iphone 11",
         "price": 700,
         "amount": 12
     },
     {
         "id": 4,
-        "product": "Xiaomi Redmi Note 11",
+        "product": "Xiaomi Redmi Note 7",
         "price": 500,
         "amount": 129
     },
